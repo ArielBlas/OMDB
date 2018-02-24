@@ -44,7 +44,7 @@ Hagan un `fork` de [este repo](https://github.com/atralice/omdb) para trabajar.
 
 Primero que nada este proyecto se divide en dos partes o módulos, el front y el back. Fíjense que ambas carpetas tienen `package.json` distintos, osea que cada uno corre aparte y por ende van a tener que interactuar vía **HTTP**.
 
-Tenemos ya armadas unas carpetas como guía, pueden modificarlas a gusto.
+Tenemos ya armadas una guía de carpetas para que se organicen, pueden modificarlas a gusto.
 
 #### Front-End
 
@@ -74,7 +74,6 @@ Tenemos ya armadas unas carpetas como guía, pueden modificarlas a gusto.
 
 
 #### Back-End
-
 
 ```bash.
 .
