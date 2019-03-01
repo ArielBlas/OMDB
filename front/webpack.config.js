@@ -1,21 +1,28 @@
 module.exports = {
-  devtool: 'source-map',
-  entry: ['./src/index.js'],
+  mode: 'development',
+  entry: './src/index.js',
+  output: {
+    filename: "bundle.js",
+    path: __dirname + '/../back/public'
+  },
   resolve: {
     extensions: ['.js', '.jsx']
   },
+  context: __dirname,
   module: {
-    loaders: [
+    rules: [
       {
-        test: /(\.js|\.jsx)$/,
+        test: /jsx?$/,
+        exclude: /(node_modules|bower_components)/,
         loader: 'babel-loader',
-        exclude: /node_modules/,
-        query: { presets: ['env', 'stage-0', 'react'] }
+        query: {
+          presets: [
+            "@babel/preset-react",
+            "@babel/env"
+          ]
+        }
       }
     ]
   },
-  output: {
-    filename: "bundle.js",
-    path: __dirname + '/../api/public'
-  }
+  devtool: 'source-map'
 }
