@@ -1,0 +1,522 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Francois One';
+}
+
+body{
+    background-color: #000000;
+    height: 500px;
+}
+
+nav{
+   background-color: #121212;
+   color: #fff;
+   
+}
+
+.omdbHeader{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin: 0px 50px;
+}
+
+.omdbIcon a{
+    text-decoration: none;
+    color: #000000;
+    background-color: #f5c519;
+    border-radius: 5px;
+    padding: 0px 5px;
+    font-weight: bold;
+    font-size: 22px;
+    letter-spacing: initial;
+}
+
+.menuHamburger{
+    position: relative;
+    padding-left: 1.25em;
+    text-decoration: none;
+    color: #fff;
+    margin: 0px 25px;
+}
+
+.menuHamburger::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.35em;
+    width: 1em;
+    height: 0.08em;
+    background: #fff;
+    box-shadow: 
+        0 0.3em 0 0 #fff,
+        0 0.6em 0 0 #fff;
+}
+
+.omdbForm{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.omdbAll{
+    background-color: #fff;
+    color: #000000;
+    padding: 4px 8px;
+    border-radius: 5px 0px 0px 5px;
+    height: 22px;
+    border-right: 1px solid #ccc;
+}
+
+.omdbSearch{
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.omdbSearch input{
+    background-color: #fff;
+    color: #000000;
+    padding: 4px 8px;
+    border: none;
+    height: 22px;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 650px;
+}
+
+.omdbSearch button{
+    background-color: #fff;
+    padding: 4px 8px;
+    border: none;
+    height: 30px;
+    border-radius: 0px 5px 5px 0px;
+    cursor: pointer;
+    color: #777777;
+}
+
+.omdbPro a{
+    text-decoration: none;
+    color: #fff;
+    margin: 0px 25px;
+    font-weight: bold;
+}
+
+.lineDecoration{
+    background-color: #777777;
+    width: 1.15px;
+    height: 30px;
+    margin: 0px 5px;
+}
+
+.omdbWatchlist{
+    margin: 0px 20px;
+
+    span{
+        margin-left: 10px;
+    }
+}
+
+.omdbWatchlist a{
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 4px;
+    font-size: 15px;
+}
+
+.omdbSignIn a{
+    font-size: 15px;
+    text-decoration: none;
+    color: #fff;
+    margin: 0px 20px;
+}
+
+.dataUser{
+    cursor: pointer;
+}
+
+.dataUserName{
+    font-size: 15px;
+    text-decoration: none;
+    color: #fff;
+    margin: 0px 10px 0px 20px;
+}
+
+.listUser{
+    position: absolute;
+    background-color: #1a1a1a;
+    padding: 15px 15px;
+    top: 45px;
+    right: 80px;
+}
+
+.listUser li{
+    list-style: none;
+    width: 100px;
+}
+
+.iconList{
+    color: #777777;
+}
+
+.container{
+    margin: 0px 50px;
+}
+
+.movies-mains{
+    margin: 25px 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+.movies-trailers{
+    width: 65%;
+}
+
+.image-scene-movie{
+    width: 100%;
+    height: 540px;
+    position: relative;
+    Clip-path: inset(0px 0px 100px 0px);    
+}
+
+.image-movie{
+    position: absolute;
+    bottom: 0px;
+    left:  20px;
+}
+
+.image-movie img{
+    width: 160px;
+    height: 230px;
+}
+
+.link-clear{
+    text-decoration: none;
+    color: #fff;
+}
+
+.bottom-imagen-movie{
+    position: absolute;
+}
+
+.text-movie{
+    position: absolute;
+    bottom: 15px;
+    left: 300px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.heading span{
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.min-trailer{
+    margin-left: 100px;
+    color: #aaa ;
+    font-size: 22px !important;
+}
+
+.sub-heading{
+    margin-top: 10px;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #aaa;
+}
+
+.button-play{
+    color: #fff;
+    position: absolute;
+    bottom: -50px;
+    left: 200px;
+}
+
+.whatchlist{
+    cursor: pointer;
+    position: absolute;
+    color: #fff;
+}
+
+.whatchlistBg{
+    top: 1px;
+    opacity: 0.3;
+    border: 2px solid #ccc;
+    border-bottom: none;
+}
+
+.whatchlistShadow{
+    fill: #ccc;   
+}
+
+.iconFavorite{
+    position: absolute;
+    top: 2px;
+    left: 2px;
+}
+
+.nav-movies{
+    width: 35%;
+}
+
+.nav-movies span{
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 600;
+    display: block;
+    width: 100%;
+    color: rgb( 245,197,24 );
+    padding: 0px 8px;
+}
+
+.nav-movies-trailer{
+    width: 90%;
+    background-color: #121212;
+    margin: 20px 15px;
+    padding: 15px;
+}
+
+.card-movies{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.card-movie img{
+    width: 100px;
+    height: 140px;
+}
+
+.card-content-movie{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px;
+}
+
+.card-content-movie{
+    text-decoration: none;
+}
+
+.card-play-movie{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50px;
+}
+
+.button-play-card{
+    width: 70px;
+}
+
+.card-min-trailer{
+    color: #aaa !important;
+    font-size: 16px !important;
+    margin-top: 15px;
+}
+
+.card-text-movie{
+    margin-left: 6px;
+}
+
+.card-text-movie .heading{  
+    color: #fff;
+    font-size: 18px ;
+    font-weight: 500;
+}
+
+.card-text-movie .sub-heading{
+    color: #aaa;
+    font-size: 16px ;
+    font-weight: 500;
+    margin-top: 5px !important;
+}
+
+/*******************************************/
+
+.pageGrid{
+    margin: 50px 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.pageGridTitle{
+    font-family: 'Roboto';
+    color: rgb( 245,197,24 );
+    font-size: 32px;
+    margin: 25px 0px;
+}
+
+.targetMovie{
+    width: 180px;
+    margin: 20px;
+}
+
+.targetMovieImg img{
+    width: 180px;
+    height: 250px;
+}
+
+.targetMovieContent{
+    background-color: #1a1a1a;
+    height: 140px;
+    padding: 10px;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.targetMovieContent a{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Roboto';
+}
+
+/* CARD */
+
+
+.cardContainer{
+    margin: 0 auto;
+    margin: 50px 250px;
+    background-color: #1a1a1a;
+    display: flex;
+    flex-direction: row;
+    padding: 50px 20px 50px 20px;
+}
+
+.cardContent{
+    padding-left: 20px;
+}
+
+.cardTitle {
+    background-color: #313131;
+    border-radius: 5px 5px 0px 0px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    h1{
+        font-family: 'Roboto';
+        color: #fff;
+        font-weight: 100;
+        font-size: 36px;
+    }
+
+    span{
+        font-family: 'Roboto';
+        padding: 15px 0px 0px 15px;
+        color: #fff;
+        font-size: 20px;
+    }
+}
+
+.cardText{
+    background-color: #eeeeee;
+    padding: 10px;
+    border-radius: 0px 0px 5px 5px;
+    p{
+        font-family: 'Roboto';
+        color: #252525;
+        padding: 10px 0px;
+    }
+}
+
+.cardImg img{
+    width: 200px;
+    height: 300px;
+}
+
+/* Sign */
+
+.signContainer{
+    margin: 100px 500px;
+    background-color: #fff;
+    padding-bottom: 30px;
+    border-radius: 20px;
+}
+
+.signContainer h2{
+    text-align: center;
+    font-family: 'Roboto';
+    padding: 50px 0px 30px;
+    font-weight: 600;
+}
+
+.signCard{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.signCard a{
+    margin: 0 auto;
+    text-decoration: none;
+    color: #5e5e5e;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 40px;
+    width: 200px;
+    font-size: 16px;
+}
+
+.createCard{
+    background-color: #E4B721;
+    color: #000 !important;
+    margin-top: 30px !important;
+    border: 1px solid #E4B721 !important;
+}
+
+/* FAVORITES */
+
+.favsCard{
+    background-color: #fff;
+    margin: 0px 200px;
+}
+
+.favsTitle{
+    font-family: 'Roboto';
+    background-color: #eeeeee;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    flex-direction: row;
+}
+
+.favsTitle h2{
+    font-family: 'Roboto';
+    color: #5e5e5e;
+    font-size: 26px;
+}
+
+.favsContent{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #ccc;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.favsPoster{
+    
+    img{
+        width: 150px;
+        height: 220px;
+    }
+}
+
+.favsText{
+    margin: 20px;
+
+    p{
+        margin-top: 20px;
+        color: #333;
+        font-family: 'Roboto';
+    }
+}
+
+.favsDelete{
+    color: #c72020;
+    cursor: pointer;
+}

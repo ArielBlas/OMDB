@@ -1,0 +1,34 @@
+.formContainer{
+    background-color: #fff;
+    margin: 80px 500px;
+    padding-bottom: 30px;
+    padding: 30px 20px 30px;
+    border-radius: 10px;
+}
+
+.formContainer h2{
+    font-family: 'Roboto';
+    padding-bottom: 20px;
+    font-weight: 100;
+    font-size: 26px;
+}
+
+.formContainer form{
+    display: flex;
+    flex-direction: column;
+}
+
+.formInput{
+    margin-bottom: 25px;
+}
+
+.formSubmit{
+    background-color: #E4B721;
+    border: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 8px 0px;
+    cursor: pointer;
+    font-family: 'Roboto';
+    color: #000;
+}
